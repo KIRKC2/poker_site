@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="table">
+  <div class="pot">Pot: <span id="pot">$0</span></div>
+  <div class="community" id="community"></div>
+  <div class="players" id="players"></div>
+</section>
+
+<section class="panel">
+  <div class="hand">
+    <div class="hand-title">Your Hand</div>
+    <div class="cards" id="hand"></div>
+  </div>
+  <div class="actions">
+    <button class="btn ghost">Fold</button>
+    <button class="btn">Check / Call</button>
+    <button class="btn primary">Raise</button>
+  </div>
+</section>
+{% endblock %}
